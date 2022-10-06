@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Input from "./Input";
+import Board from "./sandbox/Board";
 import Move from "./Move";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path={"/"} element={<Input />} />
+        <Route path={"/"} element={<Board />} />
         <Route path={"/move"} element={<Move />} />
       </Routes>
     </Router>

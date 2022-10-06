@@ -1,21 +1,5 @@
 import styled from "styled-components";
 
-const Block = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-`;
-
-const Wrapper = styled.div`
-  background-color: skyblue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-  height: 200px;
-`;
-
 const StyledForm = styled.div`
   position: relative;
 `;
@@ -51,22 +35,18 @@ const StyledSpan = styled.span`
 
 const Input = () => {
   return (
-    <Block>
-      <Wrapper>
-        <StyledForm>
-          <StyledInput
-            name="userId"
-            id="inputs"
-            type="text"
-            autoComplete="off"
-            required
-          />
-          <StyledLabel htmlFor="inputs" className="input-label">
-            <StyledSpan className="content-text">아이디</StyledSpan>
-          </StyledLabel>
-        </StyledForm>
-      </Wrapper>
-    </Block>
+    <StyledForm>
+      <StyledInput
+        name="userId"
+        id="inputs"
+        type="text"
+        autoComplete="off"
+        required
+      />
+      <StyledLabel htmlFor="inputs" className="input-label">
+        <StyledSpan className="content-text">아이디</StyledSpan>
+      </StyledLabel>
+    </StyledForm>
   );
 };
 
